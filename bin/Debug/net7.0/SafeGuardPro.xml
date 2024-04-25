@@ -1,0 +1,234 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SafeGuardPro</name>
+    </assembly>
+    <members>
+        <member name="T:SafeGuardPro.Controllers.ColaboradorController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SafeGuardPro.Controllers.ColaboradorController.#ctor(SafeGuardPro.Context.AppDbContext)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SafeGuardPro.Controllers.ColaboradorController.GetColaboradors">
+             <summary>
+             Retorna todos os cadastros dos colaboradores existentes 
+             </summary>
+            <remarks>
+            Get do cadastro, os dados retornados serão: 
+            {
+               "codCol": 0,
+               "nomeCol": "string",
+               "cpf": 0,
+               "ctps": 0,
+              "dataAdmissao": "2024-04-25",
+               "numTel": 0,
+               "email": "string"
+             }
+             </remarks>
+        </member>
+        <member name="M:SafeGuardPro.Controllers.ColaboradorController.GetColaborador(System.Int32)">
+             <summary>
+             Retorna um cadastro de um colaborador específico
+             </summary>
+            <remarks>
+            GetId do cadastro, os dados do colaborador desejado retornado será: 
+            {
+               "codCol": 0,
+               "nomeCol": "string",
+               "cpf": 0,
+               "ctps": 0,
+              "dataAdmissao": "2024-04-25",
+               "numTel": 0,
+               "email": "string"
+             }
+             </remarks>
+        </member>
+        <member name="M:SafeGuardPro.Controllers.ColaboradorController.PutColaborador(System.Int32,SafeGuardPro.Models.Colaborador)">
+             <summary>
+             Altera os dados do Colaborador desejado
+             </summary>
+            <remarks>
+            Put do cadastro, você deve informar os valores conforme no exemplo abaxo: 
+            {
+               "codCol": 0,
+               "nomeCol": "string",
+               "cpf": 0,
+               "ctps": 0,
+              "dataAdmissao": "2024-04-25",
+               "numTel": 0,
+               "email": "string"
+             }
+             </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:SafeGuardPro.Controllers.ColaboradorController.PostColaborador(SafeGuardPro.Models.Colaborador)">
+             <summary>
+             Posta um cadastro de um novo colaborador 
+             </summary>
+            <remarks>
+            Post do cadastro, preencha os dados abaixo para postar um novo colaborador: 
+            {
+               "codCol": 0,
+               "nomeCol": "string",
+               "cpf": 0,
+               "ctps": 0,
+              "dataAdmissao": "2024-04-25",
+               "numTel": 0,
+               "email": "string"
+             }
+             </remarks>
+        </member>
+        <member name="M:SafeGuardPro.Controllers.ColaboradorController.DeleteColaborador(System.Int32)">
+            <summary>
+            Deleta o cadastro do colaborador desejado
+            </summary>
+        </member>
+        <member name="T:SafeGuardPro.Controllers.EntregaController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SafeGuardPro.Controllers.EntregaController.#ctor(SafeGuardPro.Context.AppDbContext)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SafeGuardPro.Controllers.EntregaController.GetEntregas">
+             <summary>
+             Retorna todos os cadastros das entregas existentes 
+             </summary>
+            <remarks>
+            Get do cadastro, os dados retornados serão:
+              {
+                 "codEntrega": 0,
+                "dataVal": "2024-04-25",
+                 "codEpi": 0,
+                 "codCol": 0,
+                 "dataEntrega": "2024-04-25"
+               }
+            </remarks>
+        </member>
+        <member name="M:SafeGuardPro.Controllers.EntregaController.GetEntrega(System.Int32)">
+             <summary>
+             Retorna um cadastro de uma entrega específica
+             </summary>
+            <remarks>
+            GetId do cadastro, os dados da entrega desejada retornada será: 
+              {
+                 "codEntrega": 0,
+                "dataVal": "2024-04-25",
+                 "codEpi": 0,
+                 "codCol": 0,
+                 "dataEntrega": "2024-04-25"
+               }
+            </remarks>
+        </member>
+        <member name="M:SafeGuardPro.Controllers.EntregaController.PutEntrega(System.Int32,SafeGuardPro.Models.Entrega)">
+             <summary>
+             Altera os dados da entrega desejada
+             </summary>
+            <remarks>
+            Put do cadastro, você deve informar os valores conforme no exemplo abaxo: 
+              {
+                 "codEntrega": 0,
+                "dataVal": "2024-04-25",
+                 "codEpi": 0,
+                 "codCol": 0,
+                 "dataEntrega": "2024-04-25"
+               }
+            </remarks>
+        </member>
+        <member name="M:SafeGuardPro.Controllers.EntregaController.PostEntrega(SafeGuardPro.Models.Entrega)">
+             <summary>
+             Posta um novo cadastro de uma entrega
+             </summary>
+            <remarks>
+            Post do cadastro, preencha os dados abaixo para postar um novo colaborador:  
+              {
+                 "codEntrega": null,
+                "dataVal": "2024-04-25",
+                 "codEpi": 0,
+                 "codCol": 0,
+                 "dataEntrega": "2024-04-25"
+               }
+            </remarks>
+        </member>
+        <member name="M:SafeGuardPro.Controllers.EntregaController.DeleteEntrega(System.Int32)">
+            <summary>
+            Deleta um cadastro de uma entrega desejada
+            </summary>
+        </member>
+        <member name="T:SafeGuardPro.Controllers.EpiController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SafeGuardPro.Controllers.EpiController.#ctor(SafeGuardPro.Context.AppDbContext)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SafeGuardPro.Controllers.EpiController.GetEpis">
+            <summary>
+            Retorna todos os cadastros dos EPIs existentes 
+            </summary>
+            <remarks>
+            Get do cadastro, os dados retornados serão: 
+              {
+                "codEpi": 0,
+                "nomeEpi": "string",
+                "descricao": "string"
+              }
+            </remarks>
+        </member>
+        <member name="M:SafeGuardPro.Controllers.EpiController.GetEpi(System.Int32)">
+            <summary>
+            Retorna um cadastro de um EPI específico
+            </summary>
+            <remarks>
+            GetId do cadastro, os dados do EPI desejado retornado será: 
+              {
+                "codEpi": 0,
+                "nomeEpi": "string",
+                "descricao": "string"
+              }
+            </remarks>
+        </member>
+        <member name="M:SafeGuardPro.Controllers.EpiController.PutEpi(System.Int32,SafeGuardPro.Models.Epi)">
+            <summary>
+            Altera os dados do EPI desejado
+            </summary>
+            <remarks>
+            Put do cadastro, você deve informar os valores conforme no exemplo abaxo: 
+              {
+                "codEpi": 0,
+                "nomeEpi": "string",
+                "descricao": "string"
+              }
+            </remarks>
+        </member>
+        <member name="M:SafeGuardPro.Controllers.EpiController.PostEpi(SafeGuardPro.Models.Epi)">
+            <summary>
+            Posta um novo cadastro de um EPI
+            </summary>
+            <remarks>
+            Post do cadastro, preencha os dados abaixo para postar um novo EPI: 
+              {
+                "codEpi": 0,
+                "nomeEpi": "string",
+                "descricao": "string"
+              }
+            </remarks>
+        </member>
+        <member name="M:SafeGuardPro.Controllers.EpiController.DeleteEpi(System.Int32)">
+            <summary>
+            Deleta um cadastro de um EPI desejado
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "dB4gADUnBj1ayVsAjMDuCL82YDFNyf2gHrnPGwj5wxQ=",
+  "Source": "SafeGuardPro",
+  "BasePath": "_content/SafeGuardPro",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
