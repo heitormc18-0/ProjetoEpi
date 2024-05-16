@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aluno Dev\\Documents\\Dev\\SafeGuardPro\\SafeGuardPro.csproj": {}
+    "C:\\Users\\Aluno Dev\\Documents\\DEV\\ProjetoEpi\\SafeGuardPro.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aluno Dev\\Documents\\Dev\\SafeGuardPro\\SafeGuardPro.csproj": {
+    "C:\\Users\\Aluno Dev\\Documents\\DEV\\ProjetoEpi\\SafeGuardPro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aluno Dev\\Documents\\Dev\\SafeGuardPro\\SafeGuardPro.csproj",
+        "projectUniqueName": "C:\\Users\\Aluno Dev\\Documents\\DEV\\ProjetoEpi\\SafeGuardPro.csproj",
         "projectName": "SafeGuardPro",
-        "projectPath": "C:\\Users\\Aluno Dev\\Documents\\Dev\\SafeGuardPro\\SafeGuardPro.csproj",
+        "projectPath": "C:\\Users\\Aluno Dev\\Documents\\DEV\\ProjetoEpi\\SafeGuardPro.csproj",
         "packagesPath": "C:\\Users\\Aluno Dev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aluno Dev\\Documents\\Dev\\SafeGuardPro\\obj\\",
+        "outputPath": "C:\\Users\\Aluno Dev\\Documents\\DEV\\ProjetoEpi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aluno Dev\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -39,6 +39,18 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameWorkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.9, )"

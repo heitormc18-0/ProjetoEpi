@@ -230,5 +230,17 @@
             Deleta um cadastro de um EPI desejado
             </summary>
         </member>
+        <member name="T:SafeGuardPro.Migrations.identy">
+            <inheritdoc />
+        </member>
+        <member name="M:SafeGuardPro.Migrations.identy.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:SafeGuardPro.Migrations.identy.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:SafeGuardPro.Migrations.identy.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
     </members>
 </doc>

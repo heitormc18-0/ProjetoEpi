@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -15,6 +16,7 @@ namespace SafeGuardPro.Controllers
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize("Admin")]
     public class EntregaController : ControllerBase
     {
         private readonly AppDbContext _context;
@@ -43,6 +45,7 @@ namespace SafeGuardPro.Controllers
         ///</remarks>
         // GET: api/Entrega
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<Entrega>>> GetEntregas()
         {
             if (_context.Entregas == null)
@@ -67,6 +70,7 @@ namespace SafeGuardPro.Controllers
         ///</remarks>
         // GET: api/Entrega/5
         [HttpGet("{id}")]
+        [Authorize]
         public async Task<ActionResult<Entrega>> GetEntrega(int id)
         {
             if (_context.Entregas == null)
@@ -101,6 +105,7 @@ namespace SafeGuardPro.Controllers
         ///</remarks>
 
         [HttpPut("{id}")]
+        [Authorize("Admin")]
         public async Task<IActionResult> PutEntrega(int id, Entrega entrega)
         {
             if (id != entrega.CodEntrega)
@@ -146,6 +151,7 @@ namespace SafeGuardPro.Controllers
         ///   }
         ///</remarks>
         [HttpPost]
+        [Authorize("Admin")]
         public async Task<ActionResult<Entrega>> PostEntrega(Entrega entrega)
         {
             if (_context.Entregas == null)
@@ -163,6 +169,7 @@ namespace SafeGuardPro.Controllers
         /// </summary>
         // DELETE: api/Entrega/5
         [HttpDelete("{id}")]
+        [Authorize("Admin")]
         public async Task<IActionResult> DeleteEntrega(int id)
         {
             if (_context.Entregas == null)

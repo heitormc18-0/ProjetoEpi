@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using SafeGuardPro.Models;
 
 namespace SafeGuardPro.Context;
 
-public partial class AppDbContext : DbContext
+public partial class AppDbContext : IdentityDbContext<ApplicationUser>
 {
-    public AppDbContext()
-    {
-    }
+    
 
     public AppDbContext(DbContextOptions<AppDbContext> options)
         : base(options)
@@ -103,7 +102,8 @@ public partial class AppDbContext : DbContext
                 .HasColumnName("nome_epi");
         });
 
-        OnModelCreatingPartial(modelBuilder);
+
+        base.OnModelCreating(modelBuilder);
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);

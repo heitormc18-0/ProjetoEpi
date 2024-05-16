@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -15,6 +16,7 @@ namespace SafeGuardPro.Controllers
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize("Admin")]
     public class ColaboradorController : ControllerBase
     {
         private readonly AppDbContext _context;
@@ -44,6 +46,7 @@ namespace SafeGuardPro.Controllers
 
         // GET: api/Colaborador
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<Colaborador>>> GetColaboradors()
         {
             if (_context.Colaboradors == null)
@@ -69,6 +72,7 @@ namespace SafeGuardPro.Controllers
         /// </remarks>
         // GET: api/Colaborador/5
         [HttpGet("{id}")]
+        [Authorize]
         public async Task<ActionResult<Colaborador>> GetColaborador(int id)
         {
             if (_context.Colaboradors == null)
@@ -106,6 +110,7 @@ namespace SafeGuardPro.Controllers
 
         /// <returns></returns>
         [HttpPut("{id}")]
+        [Authorize("Admin")]
         public async Task<IActionResult> PutColaborador(int id, Colaborador colaborador)
         {
             if (id != colaborador.CodCol)
@@ -153,6 +158,7 @@ namespace SafeGuardPro.Controllers
         /// }
         /// </remarks>
         [HttpPost]
+        [Authorize("Admin")]
         public async Task<ActionResult<Colaborador>> PostColaborador(Colaborador colaborador)
         {
             if (_context.Colaboradors == null)
@@ -170,6 +176,7 @@ namespace SafeGuardPro.Controllers
         /// </summary>
         // DELETE: api/Colaborador/5
         [HttpDelete("{id}")]
+        [Authorize("Admin")]
         public async Task<IActionResult> DeleteColaborador(int id)
         {
             if (_context.Colaboradors == null)
