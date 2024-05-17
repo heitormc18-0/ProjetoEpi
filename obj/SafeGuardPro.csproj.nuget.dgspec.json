@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aluno Dev\\Documents\\DEV\\ProjetoEpi\\SafeGuardPro.csproj": {}
+    "C:\\Users\\Aluno Dev\\Documents\\Dev\\SafeGuardPro\\SafeGuardPro.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aluno Dev\\Documents\\DEV\\ProjetoEpi\\SafeGuardPro.csproj": {
+    "C:\\Users\\Aluno Dev\\Documents\\Dev\\SafeGuardPro\\SafeGuardPro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aluno Dev\\Documents\\DEV\\ProjetoEpi\\SafeGuardPro.csproj",
+        "projectUniqueName": "C:\\Users\\Aluno Dev\\Documents\\Dev\\SafeGuardPro\\SafeGuardPro.csproj",
         "projectName": "SafeGuardPro",
-        "projectPath": "C:\\Users\\Aluno Dev\\Documents\\DEV\\ProjetoEpi\\SafeGuardPro.csproj",
+        "projectPath": "C:\\Users\\Aluno Dev\\Documents\\Dev\\SafeGuardPro\\SafeGuardPro.csproj",
         "packagesPath": "C:\\Users\\Aluno Dev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aluno Dev\\Documents\\DEV\\ProjetoEpi\\obj\\",
+        "outputPath": "C:\\Users\\Aluno Dev\\Documents\\Dev\\SafeGuardPro\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aluno Dev\\AppData\\Roaming\\NuGet\\NuGet.Config"

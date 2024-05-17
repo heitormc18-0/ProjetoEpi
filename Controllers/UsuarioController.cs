@@ -11,7 +11,6 @@ using SafeGuardPro.Models;
 namespace projetoepi.Controllers;
 [Route("api/[controller]")]
 [ApiController]
-[Authorize]
 public class UsuarioController : ControllerBase
 {
     private readonly UserManager<ApplicationUser> _userManager;
@@ -61,7 +60,7 @@ UserInfo model)
             }
         }
         else
-        { return BadRequest("Paciente não cadastrado"); }
+        { return BadRequest("Colaborador não cadastrado"); }
     }
     [HttpGet("Check")]
     public async Task<ActionResult<String>> CheckUser(int Cpf, string

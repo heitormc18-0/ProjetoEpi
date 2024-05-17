@@ -16,7 +16,7 @@ namespace SafeGuardPro.Controllers
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize("Admin")]
+    [Authorize]
     public class EntregaController : ControllerBase
     {
         private readonly AppDbContext _context;

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7bmE+rRj3J3k86cDByrBM9w6VqnGbJu0w9uattzCdcjhYFFR1pVhYVXnElMOmvPKww8snJVk6NZ6NmB7yOMkNg==",
+  "dgSpecHash": "mdkA19YmqUMSLFGarUDolvlK2KKIBFXZ+NoV4G4c/9AGgDNZb5IkGcHVb8nVAOnwT5Qubojq4Y/hMYHCdTj55A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aluno Dev\\Documents\\DEV\\ProjetoEpi\\SafeGuardPro.csproj",
+  "projectFilePath": "C:\\Users\\Aluno Dev\\Documents\\Dev\\SafeGuardPro\\SafeGuardPro.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aluno Dev\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Aluno Dev\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

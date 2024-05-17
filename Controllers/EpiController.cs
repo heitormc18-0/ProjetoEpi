@@ -42,7 +42,7 @@ namespace SafeGuardPro.Controllers
         /// </remarks>
         // GET: api/Epi
         [HttpGet]
-        [Authorize("Admin")]
+        
 
         public async Task<ActionResult<IEnumerable<Epi>>> GetEpis()
         {
@@ -67,7 +67,7 @@ namespace SafeGuardPro.Controllers
         ///   }
         /// </remarks>
         [HttpGet("{id}")]
-        [Authorize("Admin")]
+        
         public async Task<ActionResult<Epi>> GetEpi(int id)
         {
             if (_context.Epis == null)
@@ -99,7 +99,7 @@ namespace SafeGuardPro.Controllers
         ///   }
         /// </remarks>
         [HttpPut("{id}")]
-        [Authorize("Admin")]
+       
         public async Task<IActionResult> PutEpi(int id, Epi epi)
         {
             if (id != epi.CodEpi)
@@ -143,7 +143,7 @@ namespace SafeGuardPro.Controllers
         ///   }
         /// </remarks>
         [HttpPost]
-        [Authorize("Admin")]
+        
         public async Task<ActionResult<Epi>> PostEpi(Epi epi)
         {
             if (_context.Epis == null)
@@ -161,7 +161,7 @@ namespace SafeGuardPro.Controllers
         /// </summary>
         // DELETE: api/Epi/5
         [HttpDelete("{id}")]
-        [Authorize("Admin")]
+        
         public async Task<IActionResult> DeleteEpi(int id)
         {
             if (_context.Epis == null)

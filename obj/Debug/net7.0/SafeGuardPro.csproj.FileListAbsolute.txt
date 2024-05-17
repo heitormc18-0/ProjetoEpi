@@ -566,3 +566,7 @@ C:\Users\Aluno Dev\Documents\DEV\ProjetoEpi\obj\Debug\net7.0\SafeGuardPro.xml
 C:\Users\Aluno Dev\Documents\DEV\ProjetoEpi\obj\Debug\net7.0\SafeGuardPro.pdb
 C:\Users\Aluno Dev\Documents\DEV\ProjetoEpi\obj\Debug\net7.0\SafeGuardPro.genruntimeconfig.cache
 C:\Users\Aluno Dev\Documents\DEV\ProjetoEpi\obj\Debug\net7.0\ref\SafeGuardPro.dll
+C:\Users\Aluno Dev\Documents\Dev\SafeGuardPro\bin\Debug\net7.0\SafeGuardPro.staticwebassets.runtime.json
+C:\Users\Aluno Dev\Documents\Dev\SafeGuardPro\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Aluno Dev\Documents\Dev\SafeGuardPro\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Aluno Dev\Documents\Dev\SafeGuardPro\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
